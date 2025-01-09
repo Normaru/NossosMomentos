@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(NewWal.png);
+    background-size: cover; /* Faz a imagem cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    color: white;
+    overflow: hidden;
+}
+
+/* Contêiner central */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Botões das setas */
+.seta {
+    font-size: 2rem;
+    background-color: #4c5b85; /* Azul acinzentado, que lembra o cosmos */
+    border: none;
+    color: white;
+    padding: 20px;
+    border-radius: 50%; /* Tornando as setas redondas */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+   
+}
+
+.seta:hover {
+    background-color: #6a79a9; /* Tom mais claro ao passar o mouse */
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+   
+}
+
+/* Caixa de exibição da imagem */
+.info-box {
+    width: 300px;
+    height: 380px; /* Aumentamos um pouco a altura para acomodar a legenda */
+    background-color: #1b2a41; /* Fundo escuro para a caixa */
+    border: 2px solid #4c5b85; /* Borda com cor similar às setas */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; /* Coloca a legenda abaixo da imagem */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+   
+}
+
+/* Estilo da imagem */
+.info-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Estilo da legenda */
+.caption {
+    font-size: 1rem;
+    color: #ffcc00; /* Cor dourada, para lembrar as estrelas */
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+
+}
+
+/* Adicionar estrelas no fundo */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.pixabay.com/photo/2017/08/30/00/33/space-2695563_960_720.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+.LinkLegal{
+}
+.Link {
+    font-size: 1.2rem;
+    color: #ffcc00; /* Cor dourada */
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
